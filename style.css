@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "Graphik Cy Regular Regular";
+    src: url("https://db.onlinewebfonts.com/t/03979e48c14e8e9e177bb2b69b5cf44e.eot");
+    src: url("https://db.onlinewebfonts.com/t/03979e48c14e8e9e177bb2b69b5cf44e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/03979e48c14e8e9e177bb2b69b5cf44e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/03979e48c14e8e9e177bb2b69b5cf44e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/03979e48c14e8e9e177bb2b69b5cf44e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/03979e48c14e8e9e177bb2b69b5cf44e.svg#Graphik Cy Regular Regular")format("svg");}
+body{
+font-family: "Graphik Cy Regular Regular";
+}
+
+.big-box{
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 509px;*/
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    /*padding-left: 26px;*/
+    }
+
+.title-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #07588B;
+    font-size: 48px;
+    font-weight: 600;
+    gap: 10px;
+    
+    margin-bottom: 16px;
+}
+
+.text-box{
+    display: flex;
+    align-items: flex-start;
+    color: #AFA4AA;
+    font-size: 16px;
+    /*font-weight: 200;*/
+    margin-bottom: 8px;
+    }
+
+.box-radio{
+    width: 430px;
+    height: 40px; 
+    background: #ffffff;
+}
+
+.box-container{ 
+ display: flex;
+ align-items: flex-start;
+    width: 390px;
+    height: 40px;
+   /* padding: 15px 26px;*/
+    padding: 0px;
+    justify-content: start;
+    
+    border-radius: 3px 3px 3px 3px;
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    background: #ffffff;
+    color: #ffffff     
+}
+.box-container-sum{ /*контейнер для вывода результата*/
+    display: flex;
+    width: 390px;
+    height: 96px;
+   /* padding: 15px 26px;*/
+    justify-content: flex-start;
+    align-items:center;
+    margin-top : 20px;
+    padding-left: 26px;
+    gap: 0px;
+    border-radius: 3px 3px 0px 0px;
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 0px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    background: #ffffff;
+    font-size: 46px;
+    font-weight: 500;
+    color: #585858    
+}
+.box-container-sum-input{ /*контейнер для вывода данных*/
+    display: flex;
+    width: 388px;
+    height: 96px;
+   /* padding: 15px 26px;*/
+    justify-content: flex-start;
+    align-items:center;
+    margin-top : 20px;
+    padding-left: 26px;
+    gap: 0px;
+    border-radius: 3px 3px 0px 0px;
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 0px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    background: #ffffff;
+    font-size: 46px;
+    font-weight: 500;
+    color: #202020;    
+}
+
+/* при наведении курсора */
+input[type="text"]:hover {
+  cursor: default ;
+  box-shadow: inset 2px 2px 50px rgba(235, 235, 235, 0.5);
+  
+}
+
+/* при вводе данных */
+input[type="text"]:focus {
+  border: 1px solid #a8a8a8;
+  border-radius: 3px;
+  outline: none;
+  color: #202020;
+  }
+
+
+.box-container-currency{
+ display: flex;
+    width: 390px;
+    height: 40px;
+    justify-content: flex-start;
+    align-items:center;
+    padding-left: 26px;
+    gap: 0px;
+    border-radius: 0px 0px 3px 3px;
+    border-top: 0px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #AFA4AA    
+}
+
+
+.radio-container {
+  margin-bottom: -2px; /* Отступ между кнопками */
+}
+
+.custom-radio {
+  display: none; /* Скрываем радиокнопку */
+}
+
+.custom-label {
+  position: relative;
+  padding: 0px; 
+  cursor: pointer; 
+  display: inline-flex; 
+  align-items: center; 
+  font-size: 16px;
+}
+
+/*---------------------------------------------------------*/
+.form_radio_btn {
+	display: inline-block;
+	margin-right: -4px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: flex;
+	cursor: pointer;
+	width: 82px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+	border-right: 1px solid #CDCDCD;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: #07588B;
+  color: #ffffff;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+	color: #07588B;
+  font-weight: 500;
+}
+ 
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+.form_radio_btn_first {
+	display: inline-block;
+	margin-right: -4px;
+}
+.form_radio_btn_first input[type=radio] {
+	display: none;
+}
+.form_radio_btn_first label {
+	display: flex; /*inline-block*/
+	cursor: pointer;
+	width: 82px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+	border-left: 1px solid #CDCDCD;
+	border-right: 1px solid #CDCDCD;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+	border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn_first input[type=radio]:checked + label {
+	background: #07588B;
+  color: #ffffff;;
+}
+ 
+/* Hover */
+.form_radio_btn_first label:hover {
+	color: #07588B;
+  font-weight: 500;
+}
+ 
+/* Disabled */
+.form_radio_btn_first input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #07588B;
+}
+.form_radio_btn_end {
+	display: inline-block;
+	margin-right: -4px;
+}
+.form_radio_btn_end input[type=radio] {
+	display: none;
+}
+.form_radio_btn_end label {
+	display: flex;
+	cursor: pointer;
+  width: 82px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+	border-right: 1px solid #CDCDCD;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+	border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn_end input[type=radio]:checked + label {
+	background: #07588B;
+  color: #ffffff;
+}
+ 
+/* Hover */
+.form_radio_btn_end label:hover {
+	color: #07588B;
+  font-weight: 500;
+  
+}
+ 
+/* Disabled */
+.form_radio_btn_end input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
